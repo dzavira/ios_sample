@@ -46,6 +46,7 @@
                     </view>
                     <connections>
                         <outlet property="txPesan" destination="JEz-ir-svi" id="iJN-9n-5bi"/>
+                        <segue destination="tEx-Vh-Lgk" kind="showDetail" identifier="segLatLong" id="142-mn-zle"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -61,7 +62,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="pesan 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4V0-0i-dfT">
-                                <rect key="frame" x="38" y="80" width="67" height="24"/>
+                                <rect key="frame" x="50" y="63" width="67" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -71,13 +72,44 @@
                         <viewLayoutGuide key="safeArea" id="fTp-ul-ICw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="E8s-o9-uNI"/>
                     <connections>
                         <outlet property="dataPesan" destination="4V0-0i-dfT" id="Sop-s0-qml"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jta-i8-r1I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1141" y="53"/>
+            <point key="canvasLocation" x="-823" y="809"/>
+        </scene>
+        <!--Gps View Controller-->
+        <scene sceneID="lpS-p3-xHA">
+            <objects>
+                <viewController id="tEx-Vh-Lgk" customClass="GpsViewController" customModule="exampleios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WMR-g9-ubZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6a-0z-Ttc">
+                                <rect key="frame" x="10" y="100" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Upx-CL-fcF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="i6a-0z-Ttc" firstAttribute="leading" secondItem="Upx-CL-fcF" secondAttribute="leading" constant="10" id="FIE-cA-Mu2"/>
+                            <constraint firstItem="i6a-0z-Ttc" firstAttribute="top" secondItem="Upx-CL-fcF" secondAttribute="top" constant="100" id="LR8-5d-xjz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lbLatLong" destination="i6a-0z-Ttc" id="HAU-2w-0Jz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W7W-S0-LBC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1086.9565217391305" y="780.80357142857144"/>
         </scene>
     </scenes>
     <resources>

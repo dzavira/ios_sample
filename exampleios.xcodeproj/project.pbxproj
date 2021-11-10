@@ -14,18 +14,20 @@
 		CFEAF35227390BA50015EB8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFEAF35127390BA50015EB8D /* Assets.xcassets */; };
 		CFEAF35527390BA50015EB8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFEAF35327390BA50015EB8D /* LaunchScreen.storyboard */; };
 		CFEAF36227390E5A0015EB8D /* SegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEAF36127390E5A0015EB8D /* SegueViewController.swift */; };
+		CFF1EE6F273B9DE50062B750 /* GpsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF1EE6E273B9DE50062B750 /* GpsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CFEAF34527390BA30015EB8D /* exampleios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exampleios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFEAF34827390BA30015EB8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFEAF34A27390BA30015EB8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CFEAF34C27390BA30015EB8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFEAF34C27390BA30015EB8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CFEAF34F27390BA30015EB8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFEAF35127390BA50015EB8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFEAF35427390BA50015EB8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFEAF35627390BA50015EB8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFEAF36127390E5A0015EB8D /* SegueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueViewController.swift; sourceTree = "<group>"; };
+		CFF1EE6E273B9DE50062B750 /* GpsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				CFEAF34C27390BA30015EB8D /* ViewController.swift */,
 				CFEAF36127390E5A0015EB8D /* SegueViewController.swift */,
+				CFF1EE6E273B9DE50062B750 /* GpsViewController.swift */,
 			);
 			path = activity;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFEAF36227390E5A0015EB8D /* SegueViewController.swift in Sources */,
+				CFF1EE6F273B9DE50062B750 /* GpsViewController.swift in Sources */,
 				CFEAF34D27390BA30015EB8D /* ViewController.swift in Sources */,
 				CFEAF34927390BA30015EB8D /* AppDelegate.swift in Sources */,
 				CFEAF34B27390BA30015EB8D /* SceneDelegate.swift in Sources */,
