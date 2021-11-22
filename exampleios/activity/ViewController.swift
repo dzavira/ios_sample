@@ -10,9 +10,14 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var txPesan: UITextField!
+    var lebar = 0
+    var lebarLayar = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        lebar = Int(self.view.bounds.width - 150)
+        lebarLayar = Int(self.view.bounds.width)
         btnGps()
+        btnRealm()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -20,10 +25,25 @@ class ViewController: UIViewController {
         dataSeg.Pesan = txPesan.text!
         
     }
+    func btnRealm(){
+       
+        let button = UIButton(frame: CGRect(x: lebarLayar/2 - lebar/2,
+                                            y: 310,
+                                            width: lebar,
+                                            height: 50))
+            button.setTitle("Database",
+                                for: .normal)
+            button.setTitleColor(.white,
+                                     for: .normal)
+            button.setTitleColor(.systemRed, for: .highlighted)
+            button.backgroundColor = .systemBlue
+            button.layer.cornerRadius = 15
+            button.addTarget(self, action: #selector(self.sgDatabase), for: .touchUpInside)
+        self.view.addSubview(button)
+    }
     func btnGps(){
-        let lebar = self.view.bounds.width - 150
-        let widthLayar = self.view.bounds.width
-        let button = UIButton(frame: CGRect(x: widthLayar/2 - lebar/2,
+    
+        let button = UIButton(frame: CGRect(x: lebarLayar/2 - lebar/2,
                                             y: 250,
                                             width: lebar,
                                             height: 50))
@@ -39,5 +59,8 @@ class ViewController: UIViewController {
     }
     @objc public func sgGps(){
         self.performSegue(withIdentifier: "segLatLong", sender: self)
+        }
+    @objc public func sgDatabase(){
+        self.performSegue(withIdentifier: "segRealm", sender: self)
         }
 }

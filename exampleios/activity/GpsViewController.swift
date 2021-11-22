@@ -34,7 +34,5 @@ class GpsViewController: UIViewController, CLLocationManagerDelegate {
             lbLatLong.text = "Latitude: \(Latitude) \r\n longitude: \(Longitude)"
         }
     }
-    
-
 }
 

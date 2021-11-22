@@ -47,11 +47,27 @@
                     <connections>
                         <outlet property="txPesan" destination="JEz-ir-svi" id="iJN-9n-5bi"/>
                         <segue destination="tEx-Vh-Lgk" kind="showDetail" identifier="segLatLong" id="142-mn-zle"/>
+                        <segue destination="hOA-3C-DlP" kind="showDetail" identifier="segRealm" id="nba-uk-q6k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="71.651785714285708"/>
+        </scene>
+        <!--Realm View Controller-->
+        <scene sceneID="68j-83-btG">
+            <objects>
+                <viewController id="hOA-3C-DlP" customClass="RealmViewController" customModule="exampleios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rZs-zV-zo9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rX5-ko-9R1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yYC-A2-rtx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1786" y="72"/>
         </scene>
         <!--Segue View Controller-->
         <scene sceneID="tvv-mp-eod">
